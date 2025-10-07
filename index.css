@@ -1,0 +1,123 @@
+body{
+    background-color: whitesmoke;
+}
+.head{
+    display: grid;
+    background-color: white;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(79, 137, 181) );
+    align-items: center;
+    justify-content: center; 
+     
+}
+.link{
+    padding: 1rem;
+    background-color: rgb(79, 137, 181);
+     align-items: center;
+    justify-content: center; 
+    display: flex;
+    flex-direction: column;
+}
+.link a{
+    border: 2px rgb(30, 6, 155) solid;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgb(47, 123, 238);
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+}
+.link a:hover {
+  background-color: rgb(136, 0, 255);
+  
+  color: white;
+}
+.navi{
+    background-color: rgb(79, 137, 181);
+    
+    
+}
+.media{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+}
+
+.vid, .map{
+    display: grid;
+    width: 100%;
+    height: 300px;
+   
+}
+.lag{
+    display: grid;
+    width: 100%;
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    background-image: linear-gradient(to bottom, rgb(79, 137, 181), rgb(255, 255, 255));
+}
+.textone{
+    padding: 1rem;
+    display: grid;
+    height: 40%;
+}
+.texttwo{
+    padding: 1rem;
+    height: 70%;
+    display: grid;
+}
+img{
+    width: 100%;
+    align-items: center;
+    display: grid;
+    justify-content: center; 
+}
+.foot{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(79, 137, 181) );
+    
+}
+@media screen and (min-width:48em) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .media{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .lag{
+        width: 200%;
+    }
+    .link{
+        display: flex;
+        flex-direction: row;
+    }
+    .foot{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width:60em) {
+    .container{
+        gap: 1rem;
+    }
+}
+@media screen and (min-width:80em) {
+    body{
+    font-size: 1,4rem;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }   
+}
